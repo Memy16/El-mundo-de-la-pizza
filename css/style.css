@@ -1,40 +1,15 @@
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #993535;
-}
-
-header {
-    display: flex;
-    background-color: #bf4242;
-    width: auto;
-    color: #FFFF;
-    font-family: Arial, Helvetica, sans-serif;
+h1 {
+    padding: 15px;
 }
 
 p {
-    font-family: 'Times New Roman', Times, serif;
-    color: #FFFF;
-}
-
-.navbar a{
-    text-decoration: none;
-    color: #012d03;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-.navbar {
-    display: flex;
-    gap: .9375rem;
-}
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 4.375rem;
+    padding: .625rem 1.25rem;
 }
 
 h2 {
@@ -49,25 +24,30 @@ h3 {
 }
 
 .contenedor {
-    background-image: url(https://i.pinimg.com/564x/a6/31/9a/a6319a2a90f00482d9ed297434c4a378.jpg);
-    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://i.ibb.co/bRJRX8FH/collage-de-pizzas.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.contenedor2 {
-    background-color: #f6cd53d4;
-    color: #075505;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    padding: 10px;
+.contenedores {
+    margin: 30px;
+    padding-top: 10px;
     width: fit-content;
     height: fit-content;
 }
 
-.contenedor3 {
-    background-color: #f6cd53d4;
-    transform: translateY(20px);
-    color: #075505;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    width: fit-content;
-    height: fit-content;
+.grid-tipos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3);
+    grid-gap: .3125rem;
+    margin: 1.25rem;
+}
+
+.grid-tipos > div {
+    width: 355px;
+}
+
+footer > h5 {
+    margin-inline: 25%;
 }

@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <title>Mundo De La Pizza</title>
 </head>
 <body>
     <header>
-        <nav>
-            <h1>Mundo De La Pizza</h1>
-            <div class="navbar">
-                <ul >
-                    <li>
-                        <a href="">Receta</a>
-                    </li>
-                    <li>
-                        <a href="./pages/tipos.html">Tipos</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">Mundo De La Pizza</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Receta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tipos.html">Tipos</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <h2>Bienvenidos al blog!</h2>
+        <h1>Bienvenidos al blog!</h1>
         <section>
-            <h3>Historia:</h3>
+            <h2>Historia:</h2>
             <p>Muchos se atribuyen el origen de la pizza. En las antiguas escrituras se lee que en todos los sitios se cocinaba pan con levadura. En la ultima cena Jesús partió el pan, que en aquel tiempo era en forma de “focaccia”.</p>
             <p>Los antiguos romanos preparaban los almuerzos amasando harina con agua, trabajándola como las pizzas modernas y cocinándolas sobre piedras ardientes.</p>
             <p>Con la conquista del antiguo Egipto fueron importadas las levaduras que se añadían a la masa y que con las que se obtenía un producto similar a las pizzas actuales. El nombre moderno de pizza deriva del latín pinsere, que significa prensar, aplastar y pisar.</p>
@@ -37,51 +43,56 @@
             <p>La magia de los cuatros elementos: harina, agua, sal y levadura con sus aliños se ha transformado en nuestros tiempos en ciencia para la preparación de la masa y en arte para la presentación final del producto.</p>
             <p>Gran número de pizzerías en el mundo ha modificado los gustos del consumidor, que exige un producto más ligero que no produzca hinchazón de estómago o el clásico ardor en la boca después de comer una pizza, factores negativos, atribuidos erróneamente a la levadura y a los aderezos, cuando en realidad son debidos exclusivamente a la escasa maduración de la masa.</p>
         </section>
-        <br>
         <section class="contenedor">
-            <div class="contenedor2">
-                <h3><b>Ingredientes</b></h3>
-                <h4>Masa</h4>
-                <ul>
-                    <li>1 taza de harina de trigo</li>
-                    <li>1/2 cucharadita de sal</li>
-                    <li>1/2 cucharadita de levadura en polvo</li>
-                    <li>1/3 taza de agua tibia</li>
-                    <li>1 cucharada de aceite de oliva</li>
-                </ul>
-                <br>
-                <h4>Salsa</h4>
-                <ul>
-                    <li>1/2 taza de salsa de tomate</li>
-                    <li>1/2 cucharadita de orégano</li>
-                    <li>1 diente de ajo picado (opcional)</li>
-                    <li>Sal y pimienta al gusto</li>
-                </ul>
-                <br>
-                <h4>Toppings:</h4>
-                <ul>
-                    <li>Queso mozzarella rallado (al gusto)🧀</li>
-                    <li>Pepperoni, jamón, champiñones, pimientos, etc. (opcional)</li>
-                </ul>
+            <div class="card border-warning mb-3 contenedores">
+                <div class="card-header"><h3>Ingredientes</h3></div>
+                <div class="card-body">
+                    <h4 class="card-title">Masa</h4>
+                    <ul class="card-text">
+                        <li>1 taza de harina de trigo</li>
+                        <li>1/2 cucharadita de sal</li>
+                        <li>1/2 cucharadita de levadura en polvo</li>
+                        <li>1/3 taza de agua tibia</li>
+                        <li>1 cucharada de aceite de oliva</li>
+                    </ul>
+                    <h4 class="card-title">Salsa</h4>
+                    <ul class="card-text">
+                        <li>1/2 taza de salsa de tomate</li>
+                        <li>1/2 cucharadita de orégano</li>
+                        <li>1 diente de ajo picado (opcional)</li>
+                        <li>Sal y pimienta al gusto</li>
+                    </ul>
+                    <h4 class="card-title">Toppings</h4>
+                    <ul class="card-text">
+                        <li>Queso mozzarella rallado (al gusto)🧀</li>
+                        <li>Pepperoni, jamón, champiñones, pimientos, etc. (opcional)</li>
+                    </ul>
+                </div>
             </div>
-            <div class="contenedor3">
-                <h4><b>Preparación</b></h4>
-                <ol>
-                    <li>En un bowl, mezcla la harina, la sal y la levadura.</li>
-                    <li>Agrega el agua tibia y el aceite de oliva. Mezcla hasta formar una masa.</li>
-                    <li>Amasa ligeramente sobre una superficie enharinada hasta que quede suave.</li>
-                    <li>Forma una bola y déjala reposar 10 minutos.</li>
-                    <li>En un bowl pequeño, mezcla la salsa de tomate con el orégano, el ajo picado, la sal y la pimienta.</li>
-                    <li>Precalienta el horno a 200°C</li>
-                    <li>Estira la masa con un rodillo o con las manos sobre una superficie enharinada hasta formar un círculo del grosor que prefieras.</li>
-                    <li>Coloca la masa en una bandeja para horno (puedes enharinar o aceitar la bandeja para que no se pegue).</li>
-                    <li>Extiende la salsa de tomate sobre la masa.</li>
-                    <li>Agrega el queso mozzarella y los toppings que desees.</li>
-                    <li>Hornea la pizza durante 12-15 minutos, o hasta que el queso esté burbujeante y la masa dorada.</li>
-                    <li>Saca la pizza del horno, déjala reposar un par de minutos, corta y ¡a disfrutar!😋🍕</li>
-                </ol>
-            </div>
+                <div class="card border-warning mb-3 contenedores">
+                    <div class="card-header"><h3>Preparación</h3></div>
+                    <div class="card-body">
+                        <ol class="card-text">
+                            <li>En un bowl, mezcla la harina, la sal y la levadura.</li>
+                            <li>Agrega el agua tibia y el aceite de oliva. Mezcla hasta formar una masa.</li>
+                            <li>Amasa ligeramente sobre una superficie enharinada hasta que quede suave.</li>
+                            <li>Forma una bola y déjala reposar 10 minutos.</li>
+                            <li>En un bowl pequeño, mezcla la salsa de tomate con el orégano, el ajo picado, la sal y la pimienta.</li>
+                            <li>Precalienta el horno a 200°C</li>
+                            <li>Estira la masa con un rodillo o con las manos sobre una superficie enharinada hasta formar un círculo del grosor que prefieras.</li>
+                            <li>Coloca la masa en una bandeja para horno (puedes enharinar o aceitar la bandeja para que no se pegue).</li>
+                            <li>Extiende la salsa de tomate sobre la masa.</li>
+                            <li>Agrega el queso mozzarella y los toppings que desees.</li>
+                            <li>Hornea la pizza durante 12-15 minutos, o hasta que el queso esté burbujeante y la masa dorada.</li>
+                            <li>Saca la pizza del horno, déjala reposar un par de minutos, corta y ¡a disfrutar!😋🍕</li>
+                        </ol>
+                    </div>
+                </div>
         </section>
     </main>
+    <footer>
+        <h5> &copy; 2025 Todos los derechos reservados. El Mundo de la Pizza</h5>
+    </footer>
+    <script src="./JS/app.js"></script>
 </body>
 </html>
