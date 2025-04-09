@@ -36,16 +36,15 @@ h3 {
     height: fit-content;
 }
 
-.grid-tipos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(3);
-    grid-gap: .3125rem;
-    margin: 1.25rem;
+.flex-tipos {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+    gap: .3125rem;
 }
 
-.grid-tipos > div {
-    width: 355px;
+.flex-tipos > div {
+    width: 22.1875rem;
 }
 
 footer > h5 {
