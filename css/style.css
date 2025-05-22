@@ -36,17 +36,81 @@ h3 {
     height: fit-content;
 }
 
-.flex-tipos {
-    display: flex;
-    flex-wrap: wrap;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     margin: 25px;
-    gap: .3125rem;
+    gap: 5px;
 }
 
-.flex-tipos > div {
-    width: 22.1875rem;
+.grid-container > div {
+    width: 355px;
 }
 
 footer > h5 {
     margin-inline: 25%;
+}
+
+@media(max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 25px;
+        gap: 7px;
+    }
+
+    .grid-container > div {
+        width: 320px;
+    }
+
+    .imagen {
+        width: 295px;
+    }
+}
+
+@media (max-width: 768px) {                      
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+        gap: 5px;
+    }
+
+    .grid-container > div {
+        width: 355px;
+    }
+}
+
+@media(max-width: 426px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        gap: .1875rem;
+    }
+
+    .grid-container > div {
+        width: 345px;
+    }
+
+    footer > h5 {
+        font-size: medium;
+    }
+}
+
+@media(max-width: 320px) {
+    .grid-container > div {
+        width: 285px;
+        margin: 5px;
+    }
+
+    .imagen {
+        width: 260px;
+    }
+
+    footer > h5 {
+        font-size: small;
+    }
 }
